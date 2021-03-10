@@ -171,7 +171,7 @@
 
                     ctx.textBaseline = 'middle';
 
-                    ctx.fillStyle = '#777';
+                    ctx.fillStyle = '#323232';
                     ctx.fillText(tick.label, 0, tick.height / 2);
                     ctx.restore();
                 }
