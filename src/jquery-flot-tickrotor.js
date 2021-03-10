@@ -77,7 +77,7 @@
                 opts.ticks = [];  // we'll make our own
 
                 var x;
-                for (var i = 0; i < ticks.length; i++) {
+                for (var i = 1; i < ticks.length; i++) {
                   elem = $('<span style="font:' + font + '">' + ticks[i].label + '</span>');
                   plot.getPlaceholder().append(elem);
                   ticks[i].height = elem.outerHeight(true);
@@ -145,7 +145,7 @@
                 xaxis = plot.getAxes().xaxis;
                 var box = xaxis.box;
                 var tick, label, xoffset, yoffset;
-                for (var i = 0; i < ticks.length; i++) {
+                for (var i = 1; i < ticks.length; i++) {
                     tick = ticks[i];
                     if (!tick.label) {
                         continue;
@@ -171,6 +171,7 @@
 
                     ctx.textBaseline = 'middle';
 
+                    ctx.fillStyle = '#777';
                     ctx.fillText(tick.label, 0, tick.height / 2);
                     ctx.restore();
                 }

@@ -1,0 +1,17 @@
+{
+  "name": "flot-tickrotor",
+  "description": "Flot plugin for rotating axis labels",
+  "version": "1.0.0",
+  "homepage": "https://github.com/markrcote/flot-tickrotor",
+  "author": {
+    "name": "Mark Côté"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/markrcote/flot-tickrotor.git"
+  },
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-uglify": "0.7.x"
+  }
+}
